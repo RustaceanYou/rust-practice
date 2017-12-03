@@ -129,27 +129,27 @@
 // }
 
 // 字符串
-fn main () {
-    // 字符串字面值
-    let _str = "hello world";
-    println!("{}", _str);
-    // 附带显式类型标识
-    let _public_str: &'static str = "public hello world";
-    println!("{}", _public_str);
-    // 创建一个空的字符串
-    let _empty_string = String::new();
-    println!("{}", _empty_string);
-    // 从 `&str` 类型转化成 `String` 类型
-    let mut _hello = String::from("hello, ");
-    // 压入字符
-    _hello.push('d');
-    // 压入字符碎片
-    _hello.push_str(" world");
-    println!("{}", _hello);
-    // 弹出字符
-    let mut s = String::from("foo");
-    assert_eq!(s.pop(), Some('o'));
-    assert_eq!(s.pop(), Some('o'));
-    assert_eq!(s.pop(), Some('f'));
-    assert_eq!(s.pop(), None);
-}
+// fn main () {
+//     // 字符串字面值
+//     let _str = "hello world";
+//     println!("{}", _str);
+//     // 附带显式类型标识
+//     let _public_str: &'static str = "public hello world";
+//     println!("{}", _public_str);
+//     // 创建一个空的字符串
+//     let _empty_string = String::new();
+//     println!("{}", _empty_string);
+//     // 从 `&str` 类型转化成 `String` 类型
+//     let mut _hello = String::from("hello, ");
+//     // 压入字符
+//     _hello.push('d');
+//     // 压入字符碎片
+//     _hello.push_str(" world");
+//     println!("{}", _hello);
+//     // 弹出字符
+//     let mut s = String::from("foo");
+//     assert_eq!(s.pop(), Some('o'));
+//     assert_eq!(s.pop(), Some('o'));
+//     assert_eq!(s.pop(), Some('f'));
+//     assert_eq!(s.pop(), None);
+// }
