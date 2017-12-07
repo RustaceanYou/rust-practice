@@ -153,3 +153,32 @@
 //     assert_eq!(s.pop(), Some('f'));
 //     assert_eq!(s.pop(), None);
 // }
+
+// 结构体与枚举
+// fn main() {
+//     // structs
+//     struct Point {
+//         x: i32,
+//         y: i32
+//     }
+//     let point = Point { x: 0, y: 0 };
+
+//     // tuple structs
+//     struct Color(u8, u8, u8);
+//     let android_green = Color(0xa4, 0xc6, 0x39);
+//     let Color(red, green, blue) = android_green;
+
+//     // A tuple struct’s constructors can be used as functions.
+//     struct Digit(i32);
+//     let v = vec![0, 1, 2];
+//     let d: Vec<Digit> = v.into_iter().map(Digit).collect();
+
+//     // newtype: a tuple struct with only one element
+//     struct Inches(i32);
+//     let length = Inches(10);
+//     let Inches(integer_length) = length;
+
+//     // unit-like structs
+//     struct EmptyStruct;
+//     let empty = EmptyStruct;
+// }
