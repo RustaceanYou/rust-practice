@@ -28,5 +28,5 @@ Rust Startkit Practice
     * pattern 模式
 
 * 特征（Trait）
-    *  关键字
-    *  对象
+    * 关键字
+    * 对象
